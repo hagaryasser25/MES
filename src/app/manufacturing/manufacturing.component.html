@@ -1,0 +1,390 @@
+<div class="h-100 " style="background-color: #F4F7FE; overflow-x: hidden;">
+    <ul class="nav " style="height: 70px; border-bottom:  1px solid #d8d4d4; background-color:#FFFFFF ;">
+        <li class="nav-item mt-3  col-2 me-5" style="margin-left: 180px;">
+            <a class="nav-link or col-10" style="text-align: center;" aria-current="page" href="javascript:void(0)">JOB
+                ORDERS</a>
+        </li>
+
+        <li class="nav-item mt-3 col-2 me-5">
+            <a class="nav-link or col-8" style="text-align: center;" href="javascript:void(0)">ROUTES</a>
+        </li>
+        <li class="nav-item mt-3 col-2 me-5">
+            <a class="nav-link or col-8" style="text-align: center;" href="javascript:void(0)">PROCESS</a>
+        </li>
+
+        <li class="nav-item mt-3 col-2 ">
+            <a class="nav-link or  col-8" style="text-align: center;" href="javascript:void(0)">OUTPUT</a>
+        </li>
+    </ul>
+    <ul class="nav " style="box-shadow: 0px 3px 6px #272D3B33; background-color: #FFFFFF;">
+        <li class="nav-item mt-1 ms-5 mb-1">
+            <button style="color: #2D62ED; background-color: #2D62ED4D; border-radius: 8px;
+        " mat-button [matMenuTriggerFor]="belowMenu"><i style="font-size: 20px; color: #2D62ED;"
+                    class="fa fa-building"></i>
+                Factory Name
+                <i style="margin-left: 13px; color: #2D62ED;" class="fa fa-chevron-down"></i></button>
+            <mat-menu #belowMenu="matMenu" yPosition="below">
+                <button mat-menu-item></button>
+                <button mat-menu-item></button>
+            </mat-menu>
+        </li>
+        <li class="nav-item mt-1 ms-3 mb-1">
+            <button style="background-color: #2D62ED4D; border-color: transparent; border-radius: 8px;"
+                mat-stroked-button>
+                <span style="color: #2D62ED;" class="material-icons-outlined">
+                    settings_input_composite
+                </span>
+            </button>
+        </li>
+        <li class="nav-item mt-1 ms-1 mb-1">
+            <button style="border-color: transparent;" mat-stroked-button>
+                <i style="font-size: 20px; color: #B2BEC3;" class="fa fa-rocket"></i></button>
+        </li>
+        <li class="nav-item mt-1 col-5 mb-1">
+
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button class="day" style="background-color: #2D62ED4D; color:#2D62ED ; border-color: transparent;
+      border-radius: 8px;
+      " mat-stroked-button>Today</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>Yesterday</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>Last Week</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>
+                <span class="material-icons">
+                    today
+                </span>
+            </button>
+        </li>
+    </ul>
+    <div class="row mt-5">
+        <div class="col-7 mt-3 ms-5">
+            <h1 style="font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-003f5c);
+            text-align: left;
+            font: normal normal 590 16px/19px Roboto;
+            letter-spacing: 0px;
+            color: #003F5C;
+            text-transform: capitalize;
+            opacity: 1;">manufacturing \ Job Orders</h1>
+        </div>
+        <div class="col-xxl-1 col-xl-2">
+            <button style="color: #2E4A79; background-color: #FFFFFF; border-radius: 8px;" mat-button
+                [matMenuTriggerFor]="menu"> <i style="color: #2E4A79; margin-right: 15px;"
+                    class="fa fa-chevron-down"></i>JOB ORDERS</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+        </div>
+        <div class="col-3 ms-4">
+            <div class="input-group input-group mb-3">
+                <span style="background-color: white; border-color: transparent; " class="input-group-text"
+                    id="inputGroup-sizing-default"><span style="color:#8D9192 ; " class="material-icons-outlined">
+                        search
+                    </span></span>
+
+                <input style="color: #8D9192; border-color: transparent; border-end-end-radius: 8px;" type="text "
+                    placeholder="Search by Job ID" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 " style="margin-left: 35px;">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="font-weight: 500;" class="card-title "><img class="me-2" style="height: 18px;"
+                            src="../../assets/pic/job order.png">
+                        Total Job Order Production
+                    </h5>
+                    <div class="row ms-2">
+                        <div class="col-7">
+                            <p class="p1 ">5,000 KM</p>
+                            <p class="p2" style="color: #2D62ED;">Actual Production</p>
+
+                        </div>
+                        <div class="col">
+                            <p class="p1">7,000 KM</p>
+                            <p class="p2">Planned Production</p>
+
+                        </div>
+                    </div>
+                    <div class="row  ms-2">
+                        <div class="col-9">
+                            <mat-progress-bar style="margin-top: 38px; height: 7px; border-radius: 5px;"
+                                mode="determinate" value="75"></mat-progress-bar>
+                        </div>
+                        <div class="col " style="margin-top: 30px; margin-bottom: 17px;">
+                            <p style="font-weight: 600; color: #000000; font-size: 17px;">75%</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+                <div class="card-body mb-1">
+                    <h5 style="font-weight: 500;" class="card-title "><i style="color: #003F5C;"
+                            class="fa fa-signal me-2"></i>
+                        Job Order Actual Vs. Planned Production</h5>
+                    <div class="row ms-3">
+                        <div class="col-2 " *ngFor="let i of Arr(num).fill(1)">
+                            <div class="row">
+                                <div class="col-1 ms-2">
+                                    <div class="progress progress-bar-vertical " style="background-color: #CDD5E1;">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                            aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 0%; background-color: #994F90;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="progress progress-bar-vertical "
+                                        style="min-height: 60px; margin-top: 30px; background-color: #2E4A79;">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                            aria-valuemin="0" aria-valuemax="100" style="height: 60%; ">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="p3 mt-1">Job Order</p>
+                                    <p class="p3">Name</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="height: 190px;  overflow-y: scroll; overflow-x: hidden;">
+                <div class="card-body">
+                    <h5 style="font-weight: 500; color: #EC5967; font-size: 14px;" class="card-title "><i
+                            style="color: #EC5967; font-size: 10px;" class="fa fa-circle me-3"></i>
+                        ALERTS
+                    </h5>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/Resources@2x.png" />
+                            <div class="col ms-2">
+                                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Confirm mass on machine</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; "
+                                src="../../assets/pic/material consumption.png" />
+                            <div class="col ms-3">
+                                <p class="p2 mb-2" style="color: #003F5C">Material</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Material in demand</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/Resources@2x.png" />
+                            <div class="col ms-2">
+                                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Confirm mass on machine</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-4" style="margin-left: 35px;">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row" style=" border-bottom:  2px solid #f5f1f1;">
+                        <div class="col-7 mt-2">
+                            <h5 style=" color: #000000;
+                            text-align: left;
+                            font: normal normal medium 14px/18px Montserrat;
+                            letter-spacing: 0.28px;
+                            font-weight: 500;
+                            opacity: 1;"><img style="height: 18px; margin-right: 10px;"
+                                    src="../../assets/pic/job order.png">
+                                Job Orders</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5><a (click)="clicked('1')" class="nav-link chart col-8" style="text-align: center; "
+                                    href="javascript:void(0)">
+                                    List</a>
+                            </h5>
+                        </div>
+                        <div class="col-3">
+                            <h5><a (click)="clicked('2')" class="nav-link chart col-8" style="text-align: center; "
+                                    href="javascript:void(0)">
+                                    Chart</a>
+                            </h5>
+                        </div>
+
+                    </div>
+                    <div *ngIf="selectedTab=='list'">
+                        <table class="table mt-4 ms-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Job Order ID</th>
+                                    <th scope="col">Starting Date</th>
+                                    <th scope="col">State</th>
+                                    <th scope="col ">Client</th>
+                                    <th scope="col">Sales</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Route ID</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr *ngFor="let i of Arr(num).fill(1)">
+                                    <td>938840</td>
+                                    <td>02-02-3000</td>
+                                    <td><img src="../../assets/pic/activity2.png"></td>
+                                    <td>Mohamed Ahmed</td>
+                                    <td>Mohamed Ahmed</td>
+                                    <td>30 tones Material</td>
+                                    <td>456677</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div *ngIf="selectedTab=='chart'">
+                        <div class="row" id="chart">
+                            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+                                [plotOptions]="chartOptions.plotOptions" [xaxis]="chartOptions.xaxis"></apx-chart>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title ">
+                        <div class="row">
+                            <div class="col-1">
+                                <span style="color: #003F5C;" class="material-icons-outlined">
+                                    fast_rewind
+                                    </span>
+                            </div>
+                            <div class="col mt-1 ms-2">
+                                <p style="font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/17px var(--unnamed-font-family-montserrat);
+                                letter-spacing: var(--unnamed-character-spacing-0-28);
+                                color: var(--unnamed-color-003f5c);
+                                text-align: left;
+                                font: normal normal bold 14px/17px Roboto;
+                                letter-spacing: 0.28px;
+                                color: #003F5C;
+                                text-transform: uppercase;
+                                opacity: 1;">Recent Job ORders</p>
+
+                            </div>
+
+                        </div>
+
+                    </h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

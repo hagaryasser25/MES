@@ -1,0 +1,534 @@
+<div style="background-color: #F4F7FE; height: 100%; overflow-x: hidden;" >
+  <ul class="nav " style="box-shadow: 0px 3px 6px #272D3B33; background-color: #FFFFFF;
+    ">
+    <li class="nav-item mt-1 ms-5 mb-1">
+      <button style="color: #2D62ED; background-color: #2D62ED4D; border-radius: 8px;
+        " mat-button [matMenuTriggerFor]="belowMenu"><i style="font-size: 20px; color: #2D62ED;"
+          class="fa fa-building"></i>
+        Factory Name
+        <i style="margin-left: 13px; color: #2D62ED;" class="fa fa-chevron-down"></i></button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item></button>
+        <button mat-menu-item></button>
+      </mat-menu>
+    </li>
+    <li class="nav-item mt-1 ms-3 mb-1">
+      <button style="background-color: #2D62ED4D; border-color: transparent; border-radius: 8px;" mat-stroked-button>
+        <span style="color: #2D62ED;" class="material-icons-outlined">
+          settings_input_composite
+        </span>
+      </button>
+    </li>
+    <li class="nav-item mt-1 ms-1 mb-1">
+      <button style="border-color: transparent;" mat-stroked-button>
+        <i style="font-size: 20px; color: #B2BEC3;" class="fa fa-rocket"></i></button>
+    </li>
+    <li class="nav-item mt-1 col-5 mb-1">
+
+    </li>
+    <li class="nav-item mt-1 ms-4 mb-1">
+      <button class="days" style="background-color: #2D62ED4D; color:#2D62ED ;" mat-stroked-button>Today</button>
+    </li>
+    <li class="nav-item mt-1 ms-4 mb-1">
+      <button class="days" mat-stroked-button>Yesterday</button>
+    </li>
+    <li class="nav-item mt-1 ms-4 mb-1">
+      <button class="days" mat-stroked-button>Last Week</button>
+    </li>
+    <li class="nav-item mt-1 ms-4 mb-1">
+      <button class="days" mat-stroked-button>
+        <span class="material-icons">
+          today
+        </span>
+      </button>
+    </li>
+  </ul>
+  <div class="col ms-5" style="margin-top: 60px;">
+    <h1 style="font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-003f5c);
+      text-align: left;
+      font-weight: 580;
+      letter-spacing: 0px;
+      color: #003F5C;
+      text-transform: capitalize;
+      opacity: 1;">Dashboard</h1>
+  </div>
+  <div class="row ">
+    <div class="col-xxl-8 col-xl-12 col-lg-11 col-md-9">
+      <div class="row">
+        <div class=" col-xxl-3 col-xl-11 ">
+          <div class="card ms-5 ">
+            <div class="card-body">
+              <h5 class="card-title"><img style="height: 18px;" src="../../assets/pic/total production.png">
+                Total Production</h5>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <p>5,000 KM</p>
+                  <p style="color: #2D62ED;" class="p2">Actual Production</p>
+                </div>
+                <div class="col-6 ">
+                  <P>7,000 KM</P>
+                  <p class="p2">PlannedProduction</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-8" style="margin-top: 40px;">
+                  <mat-progress-bar mode="determinate" value="75"></mat-progress-bar>
+                </div>
+                <div class="col" style="margin-top: 30px;  ">
+                  <p style="font-weight: 600; font-size: 17px;">75%</p>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xxl-5 col-xl-11 col-lg-11 col-md-9  ms-5">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img style="height: 18px;" src="../../assets/pic/pefrformance.png">
+                Performance Indicator KPI</h5>
+              <div class="row ms-3">
+                <div class="col-4">
+                  <circle-progress [percent]="76" [radius]="33" [outerStrokeWidth]="7" [innerStrokeWidth]="0"
+                    [outerStrokeColor]="'#00D1DE'" [innerStrokeColor]="'#00D1DE'" [animation]="true"
+                    [animationDuration]="300"></circle-progress>
+                  <p class="p3 ms-2">Avalability</p>
+                </div>
+                <div class="col-4">
+                  <circle-progress [percent]="68" [radius]="33" [outerStrokeWidth]="7" [innerStrokeWidth]="0"
+                    [outerStrokeColor]="'#00D1DE'" [innerStrokeColor]="'#00D1DE'" [animation]="true"
+                    [animationDuration]="300"></circle-progress>
+                  <p class="p3 ms-2">Preformance</p>
+                </div>
+                <div class="col">
+                  <div class="col-4 ">
+                    <circle-progress [percent]="25" [radius]="33" [outerStrokeWidth]="7" [innerStrokeWidth]="0"
+                      [outerStrokeColor]="'#EC5967'" [innerStrokeColor]="'#EC5967'" [animation]="true"
+                      [animationDuration]="300"></circle-progress>
+                  </div>
+                  <p class="p3" style="margin-left: 30px;">Quality</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xxl-3 col-xl-11 col-lg-11 col-md-9 " style="margin-left: 46px;">
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="card-title "><img style="height: 18px;" src="../../assets/pic/material consumption.png">
+                Material Consumption</h5>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <p>5,000 KM</p>
+                  <p style="color: #2D62ED;" class="p2">Planned Consumption</p>
+                </div>
+                <div class="col-6">
+                  <P>7,000 KM</P>
+                  <p class="p2">Planned Supply</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-8" style="margin-top: 40px;">
+                  <mat-progress-bar mode="determinate" value="75"></mat-progress-bar>
+                </div>
+                <div class="col" style="margin-top: 30px;  ">
+                  <p style="font-weight: 600; font-size: 17px;">75%</p>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ms-5 mt-5 ">
+        <div class="card col-xxl-12 col-xl-11">
+          <div class="card-body">
+            <div class="row" style=" border-bottom:  2px solid #f5f1f1;">
+              <div class="col-6 mt-2">
+                <h5 style=" color: #000000;
+                  text-align: left;
+                  font: normal normal medium 14px/18px Montserrat;
+                  letter-spacing: 0.28px;
+                  font-weight: 500;
+                  opacity: 1;"><img style="height: 18px;" src="../../assets/pic/activity.png">
+                  Current Activity</h5>
+              </div>
+              <div class="col-2">
+                <h5><a (click)="clicked('1')" class="nav-link chart col-8" style="text-align: center; " href="#">
+                    Function</a>
+                </h5>
+              </div>
+              <div class="col-2">
+                <h5><a (click)="clicked('2')" class="nav-link chart col-8" style="text-align: center; " href="#">
+                    Route</a>
+                </h5>
+              </div>
+              <div class="col-2">
+                <h5><a (click)="clicked('3')" class="nav-link chart col-8" style="text-align: center; " href="#"> Job
+                    Order</a>
+                </h5>
+              </div>
+
+            </div>
+            <div class="function" *ngIf="selectedTab=='function'">
+              <div class="row mt-3 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Assembly</p>
+
+                </div>
+                <div class="col-3" *ngFor="let i of Arr(num).fill(1) ">
+
+                  <p class="p7"> <i style="color: #2E4A79; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+                <div class="row mb-1">
+                  <p class="p8"> <i style=" margin-right: 10px; margin-left:182px ;" class="fa fa-circle"></i>Kabmak -
+                    Armoring - Steel Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Assembly-Armoring</p>
+
+                </div>
+                <div class="col-3 mb-3" *ngFor="let i of Arr(num3).fill(1) ">
+
+                  <p class="p7"> <i style="color: #00CCF2; margin-right: 10px;" class="fa fa-circle"></i>Cortinovis 2600
+                    -Assembly/Wire Armoring</p>
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Drawing</p>
+
+                </div>
+                <div class="col-3 mb-3" *ngFor="let i of Arr(num3).fill(1) ">
+
+                  <p class="p7"> <i style="color: #26D395; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+                <div class="col-3 mb-3">
+                  <p class="p8"> <i style=" margin-right: 10px; " class="fa fa-circle"></i>Kabmak - Armoring - Steel
+                    Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Extrusion</p>
+
+                </div>
+                <div class="col-3 mb-3" *ngFor="let i of Arr(num3).fill(1) ">
+
+                  <p class="p7"> <i style="color: #A0C73A; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+                <div class="col-3 mb-3">
+                  <p class="p8"> <i style=" margin-right: 10px; " class="fa fa-circle"></i>Kabmak - Armoring - Steel
+                    Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Insulation</p>
+
+                </div>
+                <div class="col-3" *ngFor="let i of Arr(num).fill(1) ">
+
+                  <p class="p7"> <i style="color: #D0BA05; margin-right: 10px;" class="fa fa-circle"></i>Kabmak -
+                    Armoring - Steel Tape</p>
+                </div>
+                <div class="row mb-1">
+                  <p class="p8"> <i style=" margin-right: 10px; margin-left:182px ;" class="fa fa-circle"></i>Kabmak -
+                    Armoring - Steel Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Insulation-Extrusion</p>
+
+                </div>
+                <div class="col-3" *ngFor="let i of Arr(num).fill(1) ">
+
+                  <p class="p7"> <i style="color: #F39C12; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+                <div class="row mb-1">
+                  <p class="p8"> <i style=" margin-right: 10px; margin-left:182px ;" class="fa fa-circle"></i>Kabmak -
+                    Armoring - Steel Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Armoring</p>
+
+                </div>
+                <div class="col-3" *ngFor="let i of Arr(num).fill(1) ">
+
+                  <p class="p7"> <i style="color: #EC5967; margin-right: 10px;" class="fa fa-circle"></i>Kabmak -
+                    Armoring - Steel Tape</p>
+                </div>
+                <div class="row mb-1">
+                  <p class="p8"> <i style=" margin-right: 10px; margin-left:182px ;" class="fa fa-circle"></i>Kabmak New
+                    - Armoring</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Lead</p>
+
+                </div>
+                <div class="col-3 mb-3" *ngFor="let i of Arr(num3).fill(1) ">
+
+                  <p class="p7"> <i style="color: #CA4E82; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+                <div class="col-3 mb-3">
+                  <p class="p8"> <i style=" margin-right: 10px; " class="fa fa-circle"></i>Kabmak - Armoring - Steel
+                    Tape</p>
+
+                </div>
+
+              </div>
+              <div class="row mt-2 ms-3" style=" border-bottom:  2px solid #f5f1f1;">
+                <div class="col-2">
+                  <p class="p6">Screening</p>
+
+                </div>
+                <div class="col-3 mb-3" *ngFor="let i of Arr(num3).fill(1) ">
+
+                  <p class="p7"> <i style="color: #634F8D; margin-right: 10px;" class="fa fa-circle"></i>Pourtier 2200/2
+                    Low Voltage - Assembly</p>
+                </div>
+              </div>
+            </div>
+            <div class="row" *ngIf="selectedTab=='route'" id="chart">
+              <apx-chart
+              [series]="chartOptions.series"
+              [chart]="chartOptions.chart"
+              [plotOptions]="chartOptions.plotOptions"
+              [xaxis]="chartOptions.xaxis"
+            ></apx-chart>
+
+            </div>
+            <div class="row" *ngIf="selectedTab=='job order'" id="chart">
+              <apx-chart
+              [series]="chartOptions2.series"
+              [chart]="chartOptions2.chart"
+              [plotOptions]="chartOptions2.plotOptions"
+              [xaxis]="chartOptions2.xaxis"
+            ></apx-chart>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-xxl-3 col-xl-11  ms-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="row col-4">
+              <div class="col-1">
+                <i style="font-size: 10px; color: #EC5967;" class="fa fa-circle"></i>
+              </div>
+              <div class="col">
+                <p style="color: #EC5967; font: normal normal medium 14px/18px Montserrat;font-weight: 590; 
+                  font-size: 13px;
+                  ">ALERTS</p>
+
+              </div>
+
+            </div>
+          </h5>
+          <div class="row line ">
+            <div class="col-3 mt-2">
+              <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/Resources@2x.png" />
+              <div class="col ms-3">
+                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+              </div>
+            </div>
+            <div class="col ">
+              <p class="p4 " style="margin-top: 12px; margin-left: 7px;">Confirm mass on machine</p>
+              <div class="row">
+                <div class="col">
+                  <p class="p5">ID</p>
+
+                </div>
+                <div class="col-3"></div>
+
+
+                <div class="col">
+                  <p class="p5">4017702</p>
+                </div>
+                <div class="col-4"></div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row line mt-2" *ngFor="let i of Arr(num).fill(1) ">
+            <div class="col-3 ">
+              <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/rocket.png" />
+              <div class="col ms-3">
+                <p class="p2 mb-2" style="color: #003F5C">machine</p>
+
+              </div>
+            </div>
+            <div class="col ">
+              <p class="p4 " style="margin-top: 5px; margin-left: 7px;">Machine stoppage</p>
+              <div class="row">
+                <div class="col">
+                  <p class="p5">ID</p>
+
+                </div>
+                <div class="col-3"></div>
+
+
+                <div class="col">
+                  <p class="p5">4017702</p>
+                </div>
+                <div class="col-4"></div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row line mt-2">
+            <div class="col-3 ">
+              <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/pefrformance.png" />
+              <div class="col ms-3">
+                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+              </div>
+            </div>
+            <div class="col ">
+              <p class="p4 " style="margin-top: 5px; margin-left: 7px;">Confirm mass on machine</p>
+              <div class="row">
+                <div class="col">
+                  <p class="p5">ID</p>
+
+                </div>
+                <div class="col-3"></div>
+
+
+                <div class="col">
+                  <p class="p5">4017702</p>
+                </div>
+                <div class="col-4"></div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <h5 class="card-title mt-3 ">
+            <div class="row col-5">
+              <div class="col-1">
+                <i style="font-size: 10px; color: #00D1DE;" class="fa fa-circle"></i>
+              </div>
+              <div class="col">
+                <p style="color: #00D1DE; font: normal normal medium 14px/18px Montserrat;font-weight: 590; 
+                  font-size: 13px;
+                  ">Notifications</p>
+
+              </div>
+
+            </div>
+          </h5>
+          <div class="row line mt-4">
+            <div class="col-3 ">
+              <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/true.png" />
+              <div class="col ms-3">
+                <p class="p2 mb-1" style="color: #003F5C; margin-left: 10px;">Done</p>
+
+              </div>
+            </div>
+            <div class="col ">
+              <p class="p4 " style="margin-top: 5px; margin-left: 7px;">Job Order is Ready</p>
+              <div class="row">
+                <div class="col">
+                  <p class="p5">ID</p>
+
+                </div>
+                <div class="col-3"></div>
+
+
+                <div class="col ">
+                  <p class="p5">4017702</p>
+                </div>
+                <div class="col-4"></div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row line mt-2" *ngFor="let i of Arr(num2).fill(1) ">
+            <div class="col-3 ">
+              <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/product.png" />
+              <div class="col ms-3">
+                <p class="p2 " style="color: #003F5C; margin-left: 5px;">Product</p>
+
+              </div>
+            </div>
+            <div class="col ">
+              <p class="p4 " style="margin-top: 5px; margin-left: 7px;">High production scrap</p>
+              <div class="row">
+                <div class="col">
+                  <p class="p5">ID</p>
+
+                </div>
+                <div class="col-3"></div>
+
+
+                <div class="col mb-2">
+                  <p class="p5">4017702</p>
+                </div>
+                <div class="col-4"></div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col mb-3"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>

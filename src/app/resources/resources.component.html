@@ -1,0 +1,564 @@
+<div class="h-100 " style="background-color: #F4F7FE; overflow-x: hidden;">
+    <ul class="nav " style="height: 70px; border-bottom:  1px solid #d8d4d4; background-color:#FFFFFF ;">
+        <li class="nav-item mt-3  col-2" style="margin-left: 150px;">
+            <a  class="nav-link or col-10" style="text-align: center;" aria-current="page"
+                href="#">TIME LINE</a>
+        </li>
+
+        <li class="nav-item mt-3 col-2 ">
+            <a  class="nav-link or col-8" style="text-align: center;" href="#">SUPPLY</a>
+        </li>
+        <li class="nav-item mt-3 col-2 ">
+            <a  class="nav-link or col-8" style="text-align: center;" href="#">WEIGHT</a>
+        </li>
+
+        <li class="nav-item mt-3 col-2 ">
+            <a  class="nav-link or  col-8" style="text-align: center;" href="#">CONSUMPTION</a>
+        </li>
+        <li class="nav-item mt-3 col-2 ">
+            <a  class="nav-link or  col-8" style="text-align: center;" href="#">PRODUCT&SCRAP</a>
+        </li>
+    </ul>
+    <ul class="nav " style="box-shadow: 0px 3px 6px #272D3B33; background-color: #FFFFFF;">
+        <li class="nav-item mt-1 ms-5 mb-1">
+            <button style="color: #2D62ED; background-color: #2D62ED4D; border-radius: 8px;
+        " mat-button [matMenuTriggerFor]="belowMenu"><i style="font-size: 20px; color: #2D62ED;"
+                    class="fa fa-building"></i>
+                Factory Name
+                <i style="margin-left: 13px; color: #2D62ED;" class="fa fa-chevron-down"></i></button>
+            <mat-menu #belowMenu="matMenu" yPosition="below">
+                <button mat-menu-item></button>
+                <button mat-menu-item></button>
+            </mat-menu>
+        </li>
+        <li class="nav-item mt-1 ms-3 mb-1">
+            <button style="background-color: #2D62ED4D; border-color: transparent; border-radius: 8px;"
+                mat-stroked-button>
+                <span style="color: #2D62ED;" class="material-icons-outlined">
+                    settings_input_composite
+                </span>
+            </button>
+        </li>
+        <li class="nav-item mt-1 ms-1 mb-1">
+            <button style="border-color: transparent;" mat-stroked-button>
+                <i style="font-size: 20px; color: #B2BEC3;" class="fa fa-rocket"></i></button>
+        </li>
+        <li class="nav-item mt-1 col-5 mb-1">
+
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button class="day" style="background-color: #2D62ED4D; color:#2D62ED ; border-color: transparent;
+      border-radius: 8px;
+      " mat-stroked-button>Today</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>Yesterday</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>Last Week</button>
+        </li>
+        <li class="nav-item mt-1 ms-4 mb-1">
+            <button style="border-color: transparent;
+      border-radius: 8px;
+      color: #B2BEC3;" class="day" mat-stroked-button>
+                <span class="material-icons">
+                    today
+                </span>
+            </button>
+        </li>
+    </ul>
+    <div class="row mt-5">
+        <div class="col-7 mt-3 ms-5">
+            <h1 style="font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-003f5c);
+        text-align: left;
+        letter-spacing: 0px;
+        color: #003F5C;
+        text-transform: capitalize; font-weight: 500;
+        opacity: 1;">Resources \ Materials \ Time line</h1>
+        </div>
+        
+        <div class="col-xxl-1 col-xl-2 ">
+            <button class="day " style="background-color: #2D62ED; color:#ffffffc0 ; border-color: transparent;
+        border-radius: 8px;
+        " mat-stroked-button><span style="color: #ffffffd7; margin-right: 20px; font-size: 19px; "
+                    class="material-icons-outlined">
+                    add
+                </span>ADD NEW</button>
+        </div>
+        <div class="col-3 ms-4">
+            <div class="input-group input-group mb-3">
+                <span style="background-color: white; border-color: transparent; " class="input-group-text"
+                    id="inputGroup-sizing-default"><span style="color:#8D9192 ; " class="material-icons-outlined">
+                        search
+                    </span></span>
+
+                <input style="color: #8D9192; border-color: transparent; border-end-end-radius: 8px;" type="text "
+                    placeholder="Search by Material Name - Type" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-3 ms-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="font-weight: 500;" class="card-title "><img class="me-2" style="height: 18px;"
+                            src="../../assets/pic/material consumption.png">
+                        Total Material Consumption
+                    </h5>
+                    <div class="row ms-1">
+                        <div class="col-7">
+                            <h2 style="margin: 0; padding: 0;">5,000 KM</h2>
+                            <p style="color: #2D62ED;" class="p1">Actual Consumption</p>
+
+                        </div>
+                        <div class="col">
+                            <h2 style="margin: 0; padding: 0;">7,000 KM</h2>
+                            <p class="p1">Planned Consumption</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row ms-1 " style="margin-bottom: 12px;">
+                        <div class="col-9">
+                            <mat-progress-bar style="margin-top: 25px;" mode="determinate" value="75">
+                            </mat-progress-bar>
+
+                        </div>
+                        <div class="col" style="margin-top: 10px;">
+                            <p style="font-weight: 600; color: #000000; font-size: 17px;">75%</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-5 ">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 style="font-weight: 500;" class="card-title "><i class="fa fa-signal me-2"></i>
+                        Material Supply Vs Demand</h5>
+                    <div class="row ms-2 mt-4 ">
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical second ">
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 40%; min-height: 20px; background-color: #00D3BE;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical" >
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 70%; background-color: #994F90;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 30%; background-color: #CA4E82">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 70%; background-color: #EC5967">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 60%; background-color: #FB7644">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 60%; background-color: #FB7644">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 20%; background-color: #FFA600">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 55%; background-color: #26D395">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 45%; background-color: #00D1DE">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 40%; background-color: #A0C73A">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 " style="margin-bottom: 14px;">
+                            <div class="progress progress-bar-vertical ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 20%; background-color: #003F5C">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 ">
+            <div class="card" style="height: 183px; overflow-y: scroll; overflow-x: hidden;" >
+                <div class="card-body">
+                    <h5 style="font-weight: 500; color: #EC5967; font-size: 14px;" class="card-title "><i
+                            style="color: #EC5967; font-size: 10px;" class="fa fa-circle me-3"></i>
+                        ALERTS
+                    </h5>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/Resources@2x.png" />
+                            <div class="col ms-3">
+                                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Confirm mass on machine</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; "
+                                src="../../assets/pic/material consumption.png" />
+                            <div class="col ms-3">
+                                <p class="p2 mb-2" style="color: #003F5C">Material</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Material in demand</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; " src="../../assets/pic/Resources@2x.png" />
+                            <div class="col ms-3">
+                                <p class="p2 mb-2" style="color: #003F5C">Warehouse</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Confirm mass on machine</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="row line ">
+                        <div class="col-3 mt-2">
+                            <img style="width: 27px; margin-left: 23px; "
+                                src="../../assets/pic/material consumption.png" />
+                            <div class="col ms-3">
+                                <p class="p2 mb-2" style="color: #003F5C">Material</p>
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <p class="p4 " style="margin: 0; padding: 0;">Material in demand</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p5">ID</p>
+
+                                </div>
+                                <div class="col-3"></div>
+
+
+                                <div class="col">
+                                    <p class="p5">4017702</p>
+                                </div>
+                                <div class="col-4"></div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row  mt-4" style="margin-left: 45px;">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row" style=" border-bottom:  2px solid #f5f1f1;">
+                            <div class="col-7 mt-2">
+                                <h5 style=" color: #000000;
+                                text-align: left;
+                                font: normal normal medium 14px/18px Montserrat;
+                                letter-spacing: 0.28px;
+                                font-weight: 500;
+                                opacity: 1;"><img style="height: 18px;"
+                                        src="../../assets/pic/material consumption.png">
+                                    Material Supplier Records</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5><a routerLink="resources" (click)="clicked('1')" class="nav-link chart col-8"
+                                        style="text-align: center; " href="#">
+                                        Material List</a>
+                                </h5>
+                            </div>
+                            <div class="col-3">
+                                <h5><a routerLink="resources"(click)="clicked('2')" class="nav-link chart col-8"
+                                        style="text-align: center; " href="#">
+                                        Material Profile</a>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2 ms-4" *ngIf="selectedTab=='material list'">
+                            <div>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder=" Search by load Name">
+                                </mat-form-field>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">material Type</th>
+                                        <th scope="col">current weight</th>
+                                        <th scope="col">Last Change</th>
+                                        <th>Last Order Date Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of Arr(num).fill(1) ">
+                                        <th scope="row "><i [ngStyle]="{}" style="color: #EC5967;" class="fa fa-circle"></i></th>
+                                        <td>Material Name</td>
+                                        <td>1000</td>
+                                        <td>+ 100</td>
+                                        <td>9:00 | 3-29-2021</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="row mt-2 ms-4" *ngIf="selectedTab=='material profile'">
+                             
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 ms-2">
+                <div class="card " style="overflow-y: scroll; overflow-x: hidden; height: 410px;"   >
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <div class="row">
+                              <div class="col-1">
+                                <span class="material-icons-outlined arrow">
+                                    import_export
+                                    </span>
+                              </div>
+                              <div class="col ms-2">
+                                  <p style="font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/17px var(--unnamed-font-family-montserrat);
+                                  letter-spacing: var(--unnamed-character-spacing-0-28);
+                                  color: var(--unnamed-color-003f5c);
+                                  text-align: left;
+                                  font: normal normal bold 14px/17px Roboto;
+                                  letter-spacing: 0.28px;
+                                  color: #003F5C;
+                                  text-transform: uppercase;
+                                  opacity: 1;">Top 5 / Least 5</p>
+                              </div>
+                              
+                              </div>     
+                      </h5>
+                      <div class="row">
+                          <div class="row col-8">
+                            <div class="col">
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #EC5967;" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #BD5364;" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #8E4F63" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #754B61" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #003F5C" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #003F5C" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #00637D" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #00879C" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #00A5B7" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                <p style="margin: 0; padding: 0;" class="name"> <i style="font-size: 8px; margin-right: 4px; color: #00D1DE" class="fa fa-circle"></i>Material Name</p>
+                                <p class="name2 " style="margin: 0; padding: 0; margin-left: 12px;">Material ID</p>
+                                <p class="name2" style="margin-left: 12px;">4256457</p>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                            <div class="col-4 mt-1" > 
+                                    <p class="id " style="margin: 0; padding: 0;">364787</p>
+                                    <p class="name2 " style="margin: 0; padding: 0; margin-left: 5px; ">4256457</p>
+                                    <p class="name2 " style="margin-left: 16px; ">4546</p>
+                                    <div *ngFor="let i of Arr(num2).fill(1) ">
+                                        <p class="id " style="margin: 0; padding: 0; margin-top: 20px;">364787</p>
+                                        <p class="name2 " style="margin: 0; padding: 0; margin-left: 5px; ">4256457</p>
+                                        <p class="name2 " style="margin-left: 16px; ">4546</p>
+                                    </div>
+
+
+
+                                
+                            </div>
+                          </div>
+                          <div class="col-1 ">
+                            <div id="chart">
+                                <apx-chart
+                                [series]="chartOptions.series"
+                                [chart]="chartOptions.chart"
+                                [plotOptions]="chartOptions.plotOptions"
+                                [responsive]="chartOptions.responsive"
+                                [xaxis]="chartOptions.xaxis"
+                                [legend]="chartOptions.legend"
+                                [fill]="chartOptions.fill"
+                                [colors]="chartOptions.colors"
+
+                              ></apx-chart>
+                              </div>
+
+                          </div>
+                          
+
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+       
+
+    </div>
+
+
+</div>

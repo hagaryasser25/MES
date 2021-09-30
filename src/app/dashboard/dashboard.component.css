@@ -1,0 +1,159 @@
+.days
+{
+    border-color: transparent;
+    border-radius: 8px;
+    color: #B2BEC3;
+}
+
+.card
+{
+    border-color: transparent;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 12px #0000001A;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.card-title
+{
+    color: #000000;
+text-align: left;
+font: normal normal medium 14px/18px Montserrat;
+letter-spacing: 0.28px;
+font-weight: 500;
+opacity: 1;
+border-bottom:  2px solid #f5f1f1;
+}
+
+p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 21px/15px var(--unnamed-font-family-montserrat);
+color: var(--unnamed-color-000000);
+text-align: left;
+font: normal normal medium 21px/15px Montserrat;
+letter-spacing: 0.42px;
+color: #000000;
+font-weight: 550;
+font-size: 15px;
+margin:0;
+padding:0;
+}
+
+.p2
+{
+    font: var(--unnamed-font-style-normal) normal 300 10px/12px var(--unnamed-font-family-montserrat);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+letter-spacing: 0px;
+font-size: 9px;
+color: #9D9D9D;
+opacity: 1;
+margin:0;
+padding:0;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #2D62ED;
+  
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+   
+}
+
+.p3
+{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
+color: var(--unnamed-color-000000);
+text-align: left;
+letter-spacing: 0.64px;
+color: #000000;
+font-weight: 410;
+font-size: 13px;
+opacity: 1;
+}
+
+.p4
+{font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
+    letter-spacing: var(--unnamed-character-spacing-0-32);
+    text-align: left;
+    font: normal normal medium 16px/19px Montserrat;
+    letter-spacing: 0.32px;
+    color: #464646;
+    opacity: 1;
+
+}
+.p5
+{
+letter-spacing: var(--unnamed-character-spacing-0-28);
+text-align: right;
+font: normal normal bold 14px/17px Montserrat;
+letter-spacing: 0.28px;
+color: #464646;
+opacity: 1;
+}
+
+.row.line
+{
+    border-bottom:  2px solid #f5f1f1;
+}
+
+.nav-link{
+    
+    text-align: left;
+    font: normal normal medium 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #B2BEC3;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+
+
+.nav-link:focus
+{
+    color: #2D62ED;
+    border-bottom: 2px solid #2D62ED;
+    
+    
+   
+}
+.p6
+{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 12px/16px Roboto;
+color: var(--unnamed-color-003f5c);
+text-align: left;
+font: normal normal bold 12px/16px Roboto;
+letter-spacing: 0.24px;
+color: #003F5C;
+text-transform: uppercase;
+opacity: 1;
+}
+
+.p7
+{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 10px/12px var(--unnamed-font-family-montserrat);
+color: var(--unnamed-color-707070);
+text-align: left;
+font-size: 10px;
+letter-spacing: 0.2px;
+color: #707070;
+opacity: 1;
+}
+.p8
+{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 10px/12px var(--unnamed-font-family-montserrat);
+text-align: left;
+font-size: 10px;
+
+letter-spacing: 0.2px;
+color: #D0D7DA;
+opacity: 1;
+}
